@@ -1,0 +1,733 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+//header
+
+.fr-header
+	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2)
+	&-fixed
+		display: flex
+		background-color: $bg-accent
+		height: 75px
+		display: flex
+		align-items: center
+		color: #fff
+		border-bottom: 1px solid #3D4A71
+		position: fixed
+		z-index: 99
+		width: 100%
+		&-logo
+			white-space: nowrap
+			margin-left: 15px
+			a
+				color: $accent
+				font-size: 30px
+				font-family: 'Astakhov-Access-Degree'
+				line-height: 30px
+				&:hover
+					text-decoration: none
+
+
+		&-number
+			font-size: 30px
+			margin-left: 40px
+			color: $accent
+			margin-left: 60%
+
+		&-bg
+			display: none
+			position: fixed
+			background-color: $bg-accent
+			width: 100%
+			height: 100vh
+			top: 0
+			opacity: 0.4
+			z-index: 997
+		&-menu
+			display: none
+			position: fixed
+			width: 30%
+			background-color: #EEF2F5
+			right: 70px
+			top: 7px
+			z-index: 998
+			padding: 50px 0
+			padding-bottom: 35px
+			.menu-logo
+				width: 100%
+				margin: 0 auto
+				display: block
+				text-align: center
+				h4
+					margin-bottom: 30px
+			ul
+				margin: 20px 0
+				padding-left: 0
+				list-style-type: none
+				a
+					color: $accent
+					transition: color .4s
+					&:hover
+						color: grey
+						text-decoration: none
+				li
+					text-align: center
+					margin: 15px 0px
+					&:last-child
+						display: none
+
+	&-bottom
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 500px
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		border-bottom: 3px solid #C09948
+		h3
+			color: #C09948
+			font-size: 70px
+			font-family: 'Astakhov-Access-Degree'
+			line-height: 75px
+.hamburger
+	z-index: 999
+	margin-left: 20px
+	&:focus
+		outline: none
+.hamburger-inner
+	background-color: $accent
+	&::after, &::before
+		background-color: $accent
+//celendar
+
+.fr-celendar-two
+	display: none
+
+.fr-celendar
+	display: flex
+	background-color: #EEF2F5
+	&-block
+		padding: 20px 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-bottom: 3px solid #EEF2F5
+		cursor: pointer
+		&:hover
+			text-decoration: none
+		&:focus
+			outline: none
+
+		p
+			margin-bottom: 0
+			font-size: 22px
+			text-transform: lowercase
+			color: #C09948
+			white-space: nowrap
+			text-align: center
+			transition: color .4s
+			&:hover
+				color: $bg-accent
+	.active-date
+		border-color: $bg-accent
+		p
+			color: $bg-accent
+.slick-prev
+	left: 15px
+	z-index: 99
+.slick-next
+	right: 15px
+.slick-arrow
+	border: none
+
+	background-color: transparent
+	cursor: pointer
+	.fa
+		color: $bg-accent
+		transition: color 
+		&:hover
+			color: red
+	&:focus
+		outline: none
+//massage press
+
+.fw-pressme
+	p
+		color: red
+		margin-bottom: 0
+		font-size: 20px
+		text-align: center
+.fw-load
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: #fff
+	display: none
+	&-ready
+		width: 40px
+		height: 40px
+		border: 3px solid transparent
+		border-radius: 50%
+		border-top-color: grey
+		margin: 30px auto
+		animation: topload 3s infinite
+@keyframes topload
+	0%
+		transform: rotate(60deg);
+	15%
+		transform: rotate(90deg);
+	25%
+		transform: rotate(150deg);
+	35%
+		transform: rotate(210deg);
+	45%
+		transform: rotate(290deg);
+	55%
+		transform: rotate(360deg);
+	65%
+		transform: rotate(-290deg);
+	75%
+		transform: rotate(-210deg);
+	85%
+		transform: rotate(-150deg);
+	95%
+		transform: rotate(-70deg);
+	100%
+		transform: rotate(-0deg);
+//seans
+
+.fw-seans
+	.col
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-block
+		width: 48%
+		margin-bottom: 30px
+		.fw-poster
+			float: left
+			height: 240px
+			width: 150px
+			background-size: cover
+			background-position: top
+			margin-right: 20px
+			overflow: hidden
+		a
+			font-size: 20px
+			line-height: 28px
+			border-bottom: 1px solid grey
+			margin-bottom: 10px
+			color: #C09948
+			transition: all .4s
+			&:hover
+				text-decoration: none
+				color: #000
+				border: none
+		&-content
+			&-time
+				padding-top: 10px
+				display: flex
+				flex-wrap: wrap
+				transition: color .1s
+				a
+					margin: 5px 10px
+					border: none 
+					color: blue
+
+//footer
+.fw-footer
+	box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1)
+	margin-top: 30px
+	height: 75px
+	background-color: $bg-accent
+	color: #fff
+	.col
+		display: flex
+		align-items: center
+		justify-content: space-between
+	p
+		flex: 1px
+		margin-bottom: 0px
+		margin-top: 20px
+		text-align: center
+	.fw-pay
+		display: flex
+		width: 40%
+		justify-content: center
+		margin-top: -40px
+		background-color: $bg-accent
+		border-radius: 30px
+		.fa
+			font-size: 40px
+			padding: 15px
+			color: #fff
+
+//pay ticket page
+.this-seans
+	margin-top: 20px
+	&-h5
+		margin-bottom: 0
+.fr-pay	
+	&-display
+		width: 40%
+		height: 20px
+		background-color: #3DA3EF
+		margin: 0 auto
+		position: relative
+		margin-bottom: 40px
+		&:before,
+			content: ' '
+			height: 20px
+			width: 20px
+			position: absolute
+			left: -20px
+			border: 10px solid transparent
+			border-top: 10px solid #3DA3EF
+			border-right: 10px solid #3DA3EF
+		&:after
+			content: ' '
+			height: 20px
+			width: 20px
+			position: absolute
+			right: -20px
+			top: 0
+			border: 10px solid transparent
+			border-top: 10px solid #3DA3EF
+			border-left: 10px solid #3DA3EF
+		p
+			text-align: center
+			line-height: 16px
+			font-size: 13px
+			color: $bg-accent
+	&-row
+		display: flex
+		list-style-type: none
+		margin: 10px auto
+		justify-content: center
+		padding-left: 0
+		li
+			margin: 0 5px
+			background-color: grey
+			width: 19px
+			height: 26px
+			text-align: center
+			line-height: 26px
+			border-radius: 5px
+			font-size: 12px
+		.unlock, .pre
+			background-color: #DEF8FF
+			transition: background-color .4s
+			cursor: pointer
+			&:hover
+				background-color: orange
+		.pre
+			&:hover
+				background-color: #DEF8FF
+				cursor: default
+		.selected
+			background-color: green
+			&:hover
+				background-color: green
+.choose-place
+	h3
+		text-align: center
+	h4
+		color: grey
+	ul
+		list-style-type: none
+		padding-left: 0
+		border-bottom: 1px solid #F2F2F2
+		padding-bottom: 10px
+		li
+			display: inline-block
+			margin: 0 15px
+			&:last-child
+				margin-left: 50px
+	&-description
+		display: none
+		color: #A1A1A1
+		font-size: 14px
+		li
+			margin: 0 15px
+	.selected-ticket
+		li
+			width: 30px
+			text-align: center
+			margin: 0 18px
+.fr-total
+	display: none
+	font-size: 24px
+	&-next
+		width: 50%
+		height: 40px
+		background-color: $accent
+		display: block
+		text-align: center
+		border-radius: 20px
+		box-shadow: 2px -2px 4px 2px rgba(0, 0, 0, .2)
+		color: darken($accent, 20%)
+		transition: opacity .4s
+		margin: 0 auto
+		&:hover
+			color: darken($accent, 20%)
+			text-decoration: none
+			opacity: .9
+.fr-techno
+	background-color: $accent
+	border: 3px solid lighten($accent, 10%)
+	border-left: 0
+	border-right: 0
+	margin-top: 50px
+	margin-bottom: 100px
+	padding: 50px
+	padding-top: 30px
+	box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1)
+	h4
+		text-align: center
+		font-size: 40px
+		margin-bottom: 30px
+		font-family: 'Astakhov-Access-Degree'
+	&-blocks
+		display: flex
+		justify-content: space-around
+		
+	&-block
+		display: flex
+		flex-direction: column
+		align-content: center
+		text-align: center
+		width: 30%
+		background-color: darken($accent, 10%)
+		padding: 30px
+		border-radius: 30px
+		border: 1px solid lighten($accent, 10%)
+		box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+		-23px 0 20px -23px rgba(0, 0, 0, .8),
+		23px 0 20px -23px rgba(0, 0, 0, .8),
+		0 0 40px rgba(0, 0, 0, .1) inset
+		&-img
+			height: 70px
+			h1
+				color: $accent
+				font-size: 40px
+			.fa
+				font-size: 50px
+				color: $accent
+		h3
+			font-family: 'Astakhov-Access-Degree'
+			font-size: 30px
+.fr-help
+	p
+		text-align: center
+		color: red
+.fr-private
+	background-color: orange
+	margin-top: 50px
+	padding: 30px
+	border: 3px solid lighten($orange, 10%)
+	p
+		text-align: center
+		font-size: 20px
+		span
+			color: red
+	.fr-total-next
+		width: 30%
+		line-height: 40px
+.fr-price
+	font-size: 30px
+//rent private zal
+
+.rt-choice
+	margin-top: 30px
+	h4
+		text-align: center
+		font-family: 'Astakhov-Access-Degree'
+		color: $accent
+	.slick-next:before,.slick-prev:before
+		color: #000
+		font-size: 30px
+.rt-choice-block
+	display: flex
+	flex-direction: column
+	align-items: center
+	&-img
+		margin: 0 auto
+		
+		img
+			flex-basis: 100px
+			margin: auto
+		
+		height: 500px
+		img
+			flex: none
+	h4
+		text-align: center
+.pr-pricelist
+	list-style-type: none
+	padding-left: 0
+	li
+		margin: 0
+		text-align: center
+.pr-zagprice
+	text-align: center
+.rt-pay
+	margin-bottom: 50px
+	.fr-total-next
+		line-height: 40px
+		margin: 0
+.rt-desc
+	p
+		text-align: center
+		&:last-clild
+			margin-bottom: 100px
+	h3
+		font-family: 'Astakhov-Access-Degree'
+		color: $accent
+		text-align: center
+		font-size: 30px
+		margin-bottom: 30px
+	&-blocks
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-block
+		width: 30%
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 20px
+		h4
+			font-size: 20px
+			padding: 15px 0
+			border-bottom: 1px solid grey
+		p
+			font-size: 14px
+			text-align: center
+		&-img
+			width: 100px
+			height: 100px
+			border: 2px solid $accent
+			border-radius: 50%
+			background-size: cover
+//about us
+.ab-emblems
+	margin-top: 50px
+	margin-bottom: 50px
+	&-blocks
+		display: flex
+		justify-content: space-between
+	&-block
+		background-position: center
+		background-size: cover
+		color: #fff	
+		padding: 10px
+		width: 20%
+		border: 3px solid $accent
+		border-radius: 10%
+		display: flex
+		flex-direction: column
+		align-items: center
+		box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+		-23px 0 20px -23px rgba(0, 0, 0, .8),
+		23px 0 20px -23px rgba(0, 0, 0, .8),
+		0 0 40px rgba(0, 0, 0, .1) inset
+		p
+			text-align: center
+			margin-bottom: 0
+			font-size: 16px
+			line-height: 18px
+		span
+			width: 100%
+			text-align: center
+			display: block
+			font-size: 50px
+			font-family: 'Astakhov-Access-Degree'
+		.fa
+			font-size: 50px
+.ab-cinema, .ab-private, .ab-feedback
+	padding: 30px 0
+	background-position: center
+	background-size: cover
+	color: $accent
+	margin-bottom: 0px
+	h2, span
+		font-family: 'Astakhov-Access-Degree'
+		text-align: center
+	p
+		text-align: center
+	.fa
+		font-size: 20px
+.ab-feedback
+	padding-top: 0
+	form
+		padding-top: 20px
+		display: flex
+		flex-direction: column
+		label
+			text-align: center
+			color: $bg-accent
+		input, textarea
+			border-radius: 10px
+			padding: 3px 10px
+			text-align: center
+			font-size: 14px
+			box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1)
+			&[type="submit"]
+				width: 40%
+				margin: 10px auto
+		textarea
+			height: 80px
+.ct-contacts
+	padding: 30px 0
+	margin-top: 30px
+	h2, span
+		font-family: 'Astakhov-Access-Degree'
+		text-align: center
+		color: $accent
+	.ct-addr
+		margin-top: 20px
+		font-size: 20px
+	
+#map
+	height: 600px
+	border-radius: 30px
+	margin-top: 40px
+	border: 3px solid $accent
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+	-23px 0 20px -23px rgba(0, 0, 0, .8),
+	23px 0 20px -23px rgba(0, 0, 0, .8),
+	0 0 40px rgba(0, 0, 0, .1) inset
+.liqpay-ticket
+	display: none
+
+//glav
+.body-glav
+	max-height: 100vh
+	overflow: hidden
+.fr-glav
+	background-size: cover
+	background-position: center
+	&-slider, &-slide
+		height: 100vh
+		width: 100%
+		background-size: cover
+		background-position: center
+		.slick-dots
+			bottom: 25px
+.slick-dotted.slick-slider
+	margin-bottom: 0
+	.slick-arrow
+		// height: 100vh
+		width: 7%
+		z-index: 99
+		
+	.slick-next
+		right: 0
+		transition: all .4s
+		&:hover
+			background: linear-gradient(to left, rgba(#000, 0.5), rgba(#fff, 0.0))
+		&:before
+			font-family: 'FontAwesome'
+			content: '\f0a4'
+			font-size: 30px	
+	.slick-prev
+		left: 0
+		&:hover
+			background: linear-gradient(to right, rgba(#000, 0.5), rgba(#fff, 0.0))
+		&:before
+			font-family: 'FontAwesome'
+			content: '\f0a5'
+			font-size: 30px
+
+.glav-header
+	background-color: rgba(#000, 0.2)
+	z-index: 999
+	.fr-header-fixed-logo
+		a
+			color: #fff
+	.fr-header-fixed-number
+		color: #fff
+.glav-hambg
+	background-color: #fff
+	&:before, &:after
+		background-color: #fff
+.slick-dots
+	li
+		button
+			&:before
+				content: '\f2d9'
+				font-family: 'FontAwesome'
+				color: orange
+				font-size: 15px
+				opacity: 0.45
+	li.slick-active
+		button
+			&:before
+					text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+					color: lighten($orange, 0.2)
+					font-size: 20px
+					opacity: 0.85
+.logo-accent
+	h4
+		color: $accent
+.gl-btn
+	position: absolute
+	top: calc(50% - 25px)
+	left: calc(50% - 110px)
+	width: 220px
+	height: 50px
+	border: 1px solid orange
+	text-align: center
+	line-height: 50px
+	border-radius: 60% 5% 50% 10%
+	background-color: rgba($accent, 0.3)
+	color: #fff
+	display: block
+	box-shadow: 6px 6px rgba(orange, 0.3), 12px 12px rgba(yellow, 0.3),  0 3px 3px #575555 inset
+	transition: all .4s
+	display: block
+	z-index: 20
+	&:hover
+		color: #fff
+		text-decoration: none
+		box-shadow: 0 0 0 7px rgba(orange, 0.3), 
+		0 0 0 14px rgba(orange, 0.2), 
+		0 0 0 21px rgba(yellow, 0.3),
+		0 3px 3px #575555 inset
+		transform: scale(1.1)
+@import "media" // Always at the end

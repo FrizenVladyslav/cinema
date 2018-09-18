@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<header class="fr-header">
+		<div class="fr-header-fixed">
+			<div class="fr-header-fixed-logo">
+				<a href="#"><i class="fa fa-film" aria-hidden="true"></i> Пионер</a>
+
+			</div>
+
+			<div class="fr-header-fixed-number">
+				<p>IMAX CINEMA</p>
+
+			</div>
+			<button class="hamburger hamburger--elastic" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>
+			<div class="fr-header-fixed-bg"></div>
+			<div class="fr-header-fixed-menu">
+				<div class="fr-header-fixed-logo">
+					<a href="#" class="menu-logo"><h4>Пионер</h4></a>
+
+				</div>
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">О кинотеатре</a></li>
+					<li><a href="#">Покупка билетов</a></li>
+					<li><a href="#">Аренда приватного зала</a></li>
+					
+				</ul>
+			</div>
+
+			
+		</div>
+
+		<div class="fr-header-bottom" style="background-image: url('img/private/header.jpg');">
+			<h3>Аренда приватного зала</h3>
+		</div>
+
+
+	</header>
+	
+	<section class="rt-choice">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h4>Выбор приватного зала</h4>
+					<div class="rt-choice-blocks">
+
+						<div class="rt-choice-block">
+							<div class="rt-choice-block-img">
+								<img src="img/private/2.jpeg">
+							</div>
+								
+							<h4>Зал 'Perfect'</h4>
+						</div>
+						<div class="rt-choice-block">
+							<div class="rt-choice-block-img">
+								<img src="img/private/1.jpeg">
+							</div>
+								
+							<h4>Зал 'Classic'</h4>
+						</div>
+						<div class="rt-choice-block">
+							<div class="rt-choice-block-img">
+								<img src="img/private/3.jpg">
+							</div>
+								
+							<h4>Зал 'Ocean'</h4>
+						</div>
+						<div class="rt-choice-block">
+							<div class="rt-choice-block-img">
+								<img src="img/private/4.jpeg">
+							</div>
+								
+							<h4>Зал 'Sport'</h4>
+						</div>
+						<div class="rt-choice-block">
+							<div class="rt-choice-block-img">
+								<img src="img/private/3.png">
+							</div>
+								
+							<h4>Зал '80-x'</h4>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="rt-pay">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-sm-3 offset-md-1 offset-lg-2">
+					<h2>Оформление заказа</h2>
+					<p class="pt-selected-zal"> Зал 'Perfect'</p>
+					<label><i class="fa fa-clock-o" aria-hidden="true"></i> Часы аренды:</label>
+					<select id="select-hour">
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+						<option value="">5</option>
+						<option value="">6</option>
+						<option value="">7</option>
+						<option value="">8</option>
+					</select>
+					<label> Начиная с:</label>
+					<select name="" id="">
+						<option>00:00</option>
+						<option>01:00</option>
+						<option>02:00</option>
+						<option>03:00</option>
+						<option>04:00</option>
+						<option>05:00</option>
+						<option>06:00</option>
+						<option>07:00</option>
+						<option>08:00</option>
+						<option>09:00</option>
+						<option>10:00</option>
+						<option>11:00</option>
+						<option>12:00</option>
+						<option>13:00</option>
+						<option>14:00</option>
+						<option>15:00</option>
+						<option>16:00</option>
+						<option>17:00</option>
+						<option>18:00</option>
+						<option>19:00</option>
+						<option>20:00</option>
+						<option>21:00</option>
+						<option>22:00</option>
+						<option>23:00</option>
+						<option>24:00</option>
+					</select>
+					<br>
+					<label><i class="fa fa-calendar" aria-hidden="true"></i> Дата:</label>
+					<select id="select-date">
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+					</select>
+					<p class="fr-price">Цена: <span>1200</span>руб.</p>
+					<!-- 1200 -->
+					
+					<iframe class="liqpay-rent" id="RentOne" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=1200&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+					<!-- 2100 -->
+					
+					<iframe class="liqpay-rent" id="RentTwo" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=2100&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+					<!-- 3000 -->
+
+					<iframe class="liqpay-rent" id="RentThree" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=3000&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+					<!-- 3900 -->
+					
+					<iframe class="liqpay-rent" id="RentFour" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=3900&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+					<!-- 4800 -->
+				
+					<iframe class="liqpay-rent" id="RentFive" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=4800&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+					<!-- 5700 -->
+					
+					<iframe class="liqpay-rent" id="RentSix" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=5700&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+					<!-- 6600 -->
+
+					<iframe class="liqpay-rent" id="RentSeven" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=6600&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+					<!-- 7500 -->
+
+					<iframe class="liqpay-rent" id="RentEight" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%B7%D0%B0%D0%BB%D0%B0&default-sum=7500&button-text=11&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410016596012861&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+				</div>
+				<div class="col-md-4">
+					<h1 class="pr-zagprice">Цена аренды</h1>
+					<ul class="pr-pricelist">
+						<li >1 час - 1200<i class="fa fa-rub" aria-hidden="true"></i></li>
+						<li>2 часа - 2100<i class="fa fa-rub" aria-hidden="true"></i></li>
+						<li>3 часа - 3000<i class="fa fa-rub" aria-hidden="true"></i></li>
+						<li>4 часа - 3900<i class="fa fa-rub" aria-hidden="true"></i></li>
+						<li>5 часов - 4800<i class="fa fa-rub" aria-hidden="true"></i></li>
+						<li>6 часов - 5700<i class="fa fa-rub" aria-hidden="true"></i></li>
+						<li>7 часов - 6600<i class="fa fa-rub" aria-hidden="true"></i></li>
+						<li>8 часов - 7500<i class="fa fa-rub" aria-hidden="true"></i></ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="rt-desc">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>Что можно в приватном зале...</h3>
+					<div class="rt-desc-blocks">
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/1.jpg');">
+							</div>
+							<h4>Романтические свидания</h4>
+							<p>
+								Смотрите кино только вдвоем, при свечах.
+								В приватном зале, обустроенным только для Вас
+							</p>
+						</div>
+
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/7.png');">
+							</div>
+							<h4>Расслабляющие Кальяны</h4>
+							<p>
+								Здесь Вы можете насладиться лучшим кальяном!
+							</p>
+						</div>
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/2.jpg');">
+							</div>
+							<h4>Кино просмотры</h4>
+							<p>
+								Смотрите любимые фильмы с друзьями
+								в приятной обстановке.
+							</p>
+						</div>
+
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/4.jpg');">
+							</div>
+							<h4>Игровые состязания</h4>
+							<p>
+								Сражайтесь в бестселлеры Sony Playstation.
+							</p>
+						</div>
+
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/5.jpg');">
+							</div>
+							<h4>Караоке битвы</h4>
+							<p>
+								Удивите своих друзей и коллег
+								своими вокальными данными.
+							</p>
+						</div>
+
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/6.jpg');">
+							</div>
+							<h4>Дни рождения</h4>
+							<p>
+								Отпразднуйте день рождения незабываемо.
+								Ваши гости будут в восторге.
+							</p>
+						</div>
+
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/3.jpg');">
+							</div>
+							<h4>Шумные вечеринки</h4>
+							<p>
+								Собирайте тусовки до 10 человек.
+								Станьте настоящим королем вечеринок.
+							</p>
+						</div>
+
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/8.jpg');">
+							</div>
+							<h4>Настольные игры</h4>
+							<p>
+								Мы можем вам предоставить широкий выбор
+								настольных игр
+							</p>
+						</div>
+
+						<div class="rt-desc-block">
+							<div class="rt-desc-block-img" style="background-image: url('img/private/desc/1.jpg');">
+							</div>
+							<h4>Детские праздники</h4>
+							<p>
+								Подарите своему ребенку незабываемый подарок!
+							</p>
+						</div>
+						
+					</div>
+					<p>Предлагаем Вам арендовать приватный зал, где Вы сможете провести время так, как сами того пожелаете и никто в зале Вам не помешает!</p>
+					<p>Во время отдыха Вы сможете воспользоваться услугами мини-бара или по предварительному заказу доставкой пиццы, суши и других блюд из ресторанов-партнеров.</p>
+					<p>Уютный зал, рассчитанный на отдых 2-10 человек. Идеален для просмотра романтического фильма с любимым человеком, интересного мультфильма или познавательного развивающего видео с ребенком или для веселого времяпрепровождения в компании лучшей подруги, пиццы и любимой комедии.</p>
+					<p>Вы можете заказать один из пяти уютных залов, различных по тематике оформления, на Ваш вкус.</p>
+					<p>Устроившись компанией от 2-х до 10-ти человек, просмотрите любимый фильм в HD-качестве, онлайн трансляции лучших спортивных событий, поиграйте в увлекательные компьютерные игры на Xbox!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="fw-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<p>&copy; <span>2018</span> Все права защищены.</p>
+					<div class="fw-pay">
+						<i class="fa fa-cc-visa" aria-hidden="true"></i>
+						<i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+						
+					</div>
+					<p>+7 499 240-52-40</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

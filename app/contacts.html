@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+	<!-- AIzaSyCZ_aXV-i6G7Oyn1oSC58W5U5qZyxsmFho -->
+	<header class="fr-header">
+		<div class="fr-header-fixed">
+			<div class="fr-header-fixed-logo">
+				<a href="#"><i class="fa fa-film" aria-hidden="true"></i> Пионер</a>
+
+			</div>
+
+			<div class="fr-header-fixed-number">
+				<p>IMAX CINEMA</p>
+
+			</div>
+			<button class="hamburger hamburger--elastic" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>
+			<div class="fr-header-fixed-bg"></div>
+			<div class="fr-header-fixed-menu">
+				<div class="fr-header-fixed-logo">
+					<a href="#" class="menu-logo"><h4>Пионер</h4></a>
+
+				</div>
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">О кинотеатре</a></li>
+					<li><a href="#">Покупка билетов</a></li>
+					<li><a href="#">Аренда приватного зала</a></li>
+					
+				</ul>
+			</div>
+
+			
+		</div>
+
+		<div class="fr-header-bottom" style="background-image: url('img/contacts.jpg');">
+			<h3>Контакты</h3>
+		</div>
+
+
+	</header>
+	
+	
+	<section class="ct-contacts">
+		<h2>Контактная информация</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div id="map"></div> 
+					<p class="ct-addr"><i class="fa fa-map" aria-hidden="true"></i> г.Москва, Кутузовский пр-т 21</p>
+				</div>
+			</div>
+		</div>
+		
+
+	</section>
+	
+	<div class="ab-feedback">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-4 offset-lg-4 offset-md-3">
+					<h2>Обратная связь</h2>
+					<form>
+						<label for="fd-name">Ваше имя:</label>
+						<input type="text" placeholder="Иван Иванов"id="fd-name" name="">
+						<br>
+						<label for="fd-email"  >Ваша почта*:</label>
+						<input type="email" placeholder="иванов@ящик.домен" required id="fd-email" name="">
+						<label for="fd-theme">Причина сообощения:</label>
+						<input type="text" id="fd-theme" placeholder="Жалоба/Воброс/Предложение" name="">
+						<label for="fd-massege">Сообщение*:</label>
+						<textarea required id="fd-massege"></textarea>
+						<input type="submit"  name="">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="fw-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<p>&copy; <span>2018</span> Все права защищены.</p>
+					<div class="fw-pay">
+						<i class="fa fa-cc-visa" aria-hidden="true"></i>
+						<i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+						
+					</div>
+					<p>Москва, Кутузовский пр-т 21</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/scripts.min.js"></script>
+	<script>
+      var map;
+      function initMap() {
+      	var myLatLng = {lat: 55.751632, lng: 37.56410};
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 55.751632, lng: 37.564107},
+          zoom: 18
+        });
+        var marker = new google.maps.Marker({
+		    position: myLatLng,
+		    map: map,
+		    title: 'Кутузовский просп., 2/1 строение 1Б'
+		 });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ_aXV-i6G7Oyn1oSC58W5U5qZyxsmFho&callback=initMap"
+    async defer></script>
+</body>
+</html>

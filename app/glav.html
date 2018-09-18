@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+<!-- 	<base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<style>
+		.slick-dotted.slick-slider .slick-arrow {
+			height: 100vh;
+		}
+	</style>
+
+</head>
+
+<body class="body">
+
+	<!-- Custom HTML -->
+
+	<header class="fr-header">
+		<div class="fr-header-fixed glav-header">
+			<div class="fr-header-fixed-logo">
+				<a href="#"><i class="fa fa-film" aria-hidden="true"></i> Пионер</a>
+
+			</div>
+
+			<div class="fr-header-fixed-number">
+				<p>IMAX CINEMA</p>
+
+			</div>
+			<button class="hamburger hamburger--elastic" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner glav-hambg"></span>
+			  </span>
+			</button>
+			<div class="fr-header-fixed-bg"></div>
+			<div class="fr-header-fixed-menu">
+				<div class="fr-header-fixed-logo">
+					<a href="#" class="menu-logo logo-accent"><h4>Пионер</h4></a>
+
+				</div>
+					<?php wp_nav_menu( array(
+					'theme_location'  => '',
+					'menu'            => '',
+					'container'       => 'ul',
+					'container_class' => 'menu-{menu-slug}-container',
+					'container_id'    => '',
+					'menu_class'      => 'menu',
+					'menu_id'         => '',
+					'echo'            => true,
+					'fallback_cb'     => 'wp_page_menu',
+					'before'          => '',
+					'after'           => '',
+					'link_before'     => '',
+					'link_after'      => '',
+					'items_wrap'      => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+					'depth'           => 0,
+					'walker'          => '',
+				) ); ?>
+			</div>
+		</div>
+	</header>
+	<div class="fr-glav-slider" >
+		<div class="fr-glav-slide" style="background-image: url('img/glav/1.jpg');"></div>
+		<div class="fr-glav-slide" style="background-image: url('img/glav/2.jpg');"></div>
+		<div class="fr-glav-slide" style="background-image: url('img/glav/3.jpg');"></div>
+		<div class="fr-glav-slide" style="background-image: url('img/glav/4.jpg');"></div>
+		<div class="fr-glav-slide" style="background-image: url('img/glav/5.jpg');"></div>
+	</div>
+	<a href="#" class="gl-btn">Рассписание сеансов</a>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

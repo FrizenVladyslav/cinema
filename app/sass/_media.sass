@@ -1,0 +1,223 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
++media-breakpoint-down(xl)
++media-breakpoint-down(lg)
+	.fr-header-fixed-number
+		display: none
+	.hamburger
+		position: absolute
+		right: 60px
+	.choose-place
+		h4
+			font-size: 12px
+	.fr-techno-block
+		width: 40%
+	.rt-choice-block-img
+		height: 450px
+		img
+			max-width: 80%
+			height: auto
++media-breakpoint-down(md)
+	.fr-header-bottom
+		height: 300px
+		h3
+			font-size: 50px
+	.fr-header-fixed-menu
+		width: 50%
+	.fr-header-fixed
+		background-color: transparent
+		border: none
+		height: 50px
+		&-logo
+			display: none
+		&-menu
+			.fr-header-fixed-logo
+				display: block
+	.fr-private
+		.fr-total-next
+			width: 60%
+	.rt-desc
+		p
+			font-size: 14px
+	.rt-desc-block
+		width: 100%
+	.rt-choice-block-img
+		height: 445px
+		width: 100%
+		img
+			max-width: 100%
+	.ab-emblems-block
+		width: 24%
+		p
+			font-size: 13px
+	#map
+		height: 450px
++media-breakpoint-down(sm)
+	.fr-header-bottom
+		h3
+			font-size: 35px
+			text-align: center
+	.fw-seans-block
+		width: 90%
+		margin-bottom: 50px
+	.hamburger
+		right: 20px
+	.fr-header-fixed-menu
+		right: 35px
+	.fw-footer
+		p
+			font-size: 13px
+	.fr-pay-display
+		width: 90%
+	.fr-pay-row
+		font-size: 13px
+	.fr-private
+		.fr-total-next
+			width: 80%
+	.fr-techno-blocks
+		flex-direction: column
+		align-items: center
+	.fr-techno-block
+		padding: 10px
+		width: 100%
+		margin: 10px 0
+	.rt-desc
+		h3
+			font-size: 25px
+	.rt-choice-block-img
+		height: 310px
+	.ab-emblems-blocks
+		flex-wrap: wrap
+		display: flex
+	.ab-emblems-block
+		width: 45%
+		margin-top: 15px
+		p
+			font-size: 14px
+	.ab-cinema, .ab-private
+		font-size: 14px
+	#map
+		height: 400px
+	.slick-dotted.slick-slider
+		.slick-arrow
+			width: 15%
+	.gl-btn
+		top: calc(50% - 22px)
+		left: calc(50% - 100px)
+		width: 200px
+		height: 44px
+		font-size: 14px
+		line-height: 44px
++media-breakpoint-down(xs)
+	.fr-header-fixed-menu
+		width: 100%
+		right: 0
+	.fw-footer
+		p
+			font-size: 10px
+		.fw-pay
+			.fa
+				font-size: 25px
+	.hamburger
+		right: 10px
+	.fw-seans-block
+		width: 95%
+	.fw-seans-block-content-time
+		a
+			font-size: 16px
+	.fr-celendar
+		display: none
+	.fr-celendar-two
+		display: block
+		background-color: #EEF2F5
+		padding-top: 10px
+		p
+			text-align: center
+			color: red
+			margin-bottom: 0
+		ul
+			list-style-type: none
+			padding-left: 0
+			display: flex
+			flex-wrap: wrap
+			padding: 10px
+			li
+				text-align: center
+				margin: 10px
+				color: $accent
+			.active-date
+				color: $bg-accent
+				a
+					text-align: center
+				.active-date
+					color: $bg-accent
+			
+	.fr-pay-row
+		font-size: 10px
+	.fr-private
+		.fr-total-next
+			width: 100%
+	.fr-techno-blocks
+		flex-direction: column
+		align-items: center
+	.fr-techno-block
+		padding: 10px
+		width: 100%
+		margin: 10px 0
+	.fr-techno
+		padding: 20px
+	.fr-private
+		p
+			font-size: 14px
+	.fr-techno
+		h4
+			font-size: 20px
+			margin-bottom: 20px
+			margin-top: 15px
+	.rt-desc-block
+		margin: 0 auto
+		width: 95%
+	.rt-desc
+		p
+			font-size: 12px
+		h3
+			font-size: 20px
+	.fa-clock-o
+		display: none
+	.rt-pay
+		label
+			font-size: 12.4px
+		.fr-total-next
+			margin: 0 auto
+			margin-bottom: 30px
+	.rt-choice-block
+		width: 300px
+	.ab-emblems-block
+		width: 90%
+		margin: auto
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+		.fa
+			margin-bottom: 15px
+	.ab-cinema, .ab-private, .ab-feedback
+		font-size: 13px
+		h2
+			font-size: 18px
+	.gl-btn
+		top: calc(50% - 20px)
+		left: calc(50% - 90px)
+		width: 180px
+		height: 40px
+		font-size: 13px
+		line-height: 40px
+/*==========  Mobile First  ==========*/
+
++media-breakpoint-up(xs)
++media-breakpoint-up(sm)
++media-breakpoint-up(md)
++media-breakpoint-up(lg)
++media-breakpoint-up(xl)
